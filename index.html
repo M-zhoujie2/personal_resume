@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>简历生成器</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+    <script src="static/js/script.js"></script>
+</head>
+
+<body>
+    <div class="container" id="cv">
+        <div class="side">
+            <div class="me">
+                <div class="portrait"></div>
+                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
+                    <h3>请输入图片URL地址：</h3>
+                    <br/>
+                    <input type="text" id="avatar-url">
+                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+                </div>
+                <h1 id="username" >墨生人</h1>
+                <h4 id="persona-tag" >怀揣梦想，现实的活着</h4>
+            </div>
+            <div class="contact info-unit">
+                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">联系方式</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">QQ</label><span class="label-value">455149836</span></li>
+                    <li>
+                        <label class="left-label">微信</label><span class="label-value">lorita222</span></li>
+                    <li>
+                        <label class="left-label">邮箱</label><span class="label-value">455149836@qq.com</span></li>
+                    <li>
+                        <label class="left-label">Github</label><span class="label-value">github.com/M-zhoujie2</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="education info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">基本信息</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <label>个人信息：</label><span class="label-value">周捷/男/27岁</span></li>
+                    <li>
+                        <label>教育经历：</label><span class="label-value">本科/南京航天航空大学机械工程与应用专业</span></li>
+                    <li>
+                        <label>英语水平：</label><span class="label-value">CET-4</span></li>
+                    <li>
+                        <label>常用昵称：</label><span class="label-value">墨生人</span></li>
+                </ul>
+            </div>
+            <div class="work info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">项目与工作经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>南京厚建云计算有限公司</h3>
+                        <h4>秀赞平台项目</h4>
+                        <p>
+                            参与 xiuzan 秀赞平台1.0，2.0 部分前后端的开发工作，后端主要负责秀赞云平台相关api，以及第三方登录授权流程，前端主要负责运营后台，完成了用户管理、会员管理、生成页管理、模板、统计、运营专用等页面，项目web端操作，作用于App第三方服务，后端采用lumen框架，配合redis，ssdb进行数据操作，提供api
+前端采用 AngularJS 框架配合相关组件 实现前端组件及数据交互，使用 Gulp 进行自动化处理
+                            <br/>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>实验楼－课程内容（自学）</h3>
+                    </li>
+                    <li>
+                        <h3>freeCodeCamp — 课程内容（自学）</h3>
+                    </li>
+                    <li>
+                        <h3>计蒜客 — 课程内容（自学）</h3>
+                    </li>
+                </ul class="experience-list">
+            </div>
+            <div class="project info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">技术清单</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>Web前端</h3>
+                        <h4>html/css</h4>
+                        <p>
+                            能够编写语义化的 HTML，模块化的 CSS，完成较复杂的布局，熟悉 Sass 等CSS预处理和后处理方法、工具
+                            <br/>
+                        </p>
+                        <h4>Javascript</h4>
+                        <p>
+                            熟悉原生Javascript，能脱离jQuery等类库编码
+                            能运用模块化、面向对象的方式编程
+                            了解 RequireJS jQuery AngularJS typeScript的使用
+                        </p>
+                        <h4>其他</h4>
+                        <p>
+                            熟悉 Bower Gulp 前端自动化工具
+                            了解前端发展趋势、性能优化方面的一些知识
+                        </p>
+                    </li>
+                    <li>
+                        <h3>后端</h3>
+                        <h4>环境</h4>
+                        <p>
+                            熟悉 Linux 开发环境、 Linux 服务器环境搭建部署，两年 Linux 日常使用经验
+                            了解 Nginx web服务器，一年多建站经验
+                        </p>
+                        <h4>语言</h4>
+                        <p>了解 Php，能够熟练使用Php创建Web网站</p>
+                        <p>了解 Python，能够实现简单的爬虫、数据及图像处理工具、自动化脚本</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="aboutme info-unit right-paragraph">
+                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
+                <hr>
+                <p>
+                   是一个有高级趣味，良好价值观的人，有强迫症，愿意在全栈路上奋力前行
+                   学习能力强，以上绝大多数的技能都是在转业之后自学修得的
+                   掌握 Vim Git 等开发工具的使用，能够熟练使用 Markdown 进行写作
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
